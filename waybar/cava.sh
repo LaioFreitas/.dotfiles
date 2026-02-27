@@ -1,35 +1,33 @@
-#! /bin/bash
-# mata instâncias antigas do próprio script
-#pkill -f "cava.sh" >/dev/null 2>&1 || true
 
-# mata instâncias antigas do cava
-#pkill -f "cava -p" >/dev/null 2>&1 || true
+#!/bin/bash
 
-bar="▁▂▃▄▅▆▇█"
+LOCK="/tmp/waybar-cava.lock"
+
+exec 9>"$LOCK" || exit 1
+flock -n 9 || exit 0
+
+bars="▁▂▃▄▅▆▇█"
 dict="s/;//g;"
-
-# creating "dictionary" to replace char with bar
 i=0
-while [ $i -lt ${#bar} ]
-do
-    dict="${dict}s/$i/${bar:$i:1}/g;"
-    i=$((i=i+1))
+while [ $i -lt ${#bars} ]; do
+  dict="${dict}s/$i/${bars:$i:1}/g;"
+  i=$((i+1))
 done
 
-# write cava config
-config_file="/tmp/polybar_cava_config"
-echo "
+cava -p <(cat <<EOF
 [general]
-bars = 18
+bars = 20
+framerate = 60
+
+
+[input]
+method = pulse
 
 [output]
 method = raw
 raw_target = /dev/stdout
 data_format = ascii
 ascii_max_range = 7
-" > $config_file
-
-# read stdout from cava
-cava -p $config_file | while read -r line; do
-    echo $line | sed $dict
-done
+EOF
+) | sed "$dict"
+ne

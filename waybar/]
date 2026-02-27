@@ -21,12 +21,12 @@
 tooltip label {
   color: @fg;
   text-shadow: none;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 tooltip {
   background-color: @bg;
-  border-radius: 14px;
+  border-radius: 5px;
   border: 1px solid @bg;
   opacity: 0.9;
 }
@@ -52,7 +52,7 @@ window#waybar.empty #window {
 /* --- Modules --- */
 .modules-left {
   margin: 0px 0 0 0;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 .modules-center {
@@ -62,7 +62,7 @@ window#waybar.empty #window {
   /*box-shadow: 1px 1px 3px 1px @ia1;*/
   border-radius: 0px 0px 14px 14px ;
   color: @fg;
-  border: 1px solid alpha(@fg, 0.3);
+  border: 1px solid alpha(@fg, 0.4);
   border-width: 0px 1px 1px 1px;
 }
 
@@ -100,7 +100,6 @@ window#waybar.empty #window {
 #workspaces button:last-child {
   margin: 0px 0px 0px 2px;
 }
-
 #workspaces button.empty:hover {
   background-color: alpha(@fg, 0.7);
 }
@@ -124,9 +123,9 @@ window#waybar.empty #window {
   color: @fg;
   padding: 0 23px;
   background-color: alpha(@btw, 0.9);
-  border-radius: 14px;
+  border-radius: 24px;
   opacity: 1.0;
-  transition: all 0.17s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 
 /*#workspaces button.empty {
@@ -136,7 +135,7 @@ window#waybar.empty #window {
   background-color: alpha(@fg, 0.4);/*@background;*/
   color: @fg;
   opacity: 0.45;
-  border-radius: 14px;
+  border-radius: 24px;
   transition: all 0.15s ease-in-out;
 }
 
@@ -144,6 +143,7 @@ window#waybar.empty #window {
   background-color: alpha(@foreground, 1);
   color: @background;
   opacity: 1;
+
 }
 /* --- Custom Color+Shdow Omarchy --- */
 #custom-omarchy {
@@ -190,51 +190,25 @@ window#waybar.empty #window {
 #custom-screenrecording-indicator,
 #custom-updatespacman {
   padding: 0 13px;
-  border-radius: 14px;
+  border-radius: 12px;
   background: @bg;
   margin: 0px 4px 0px 4px;
   border: 1px solid alpha(@fg, 0.3);
-}
-
-#taskbar {
-  border-bottom-right-radius: 14px;
-  border-bottom-left-radius: 14px;
-}
-
-#taskbar button {
-  border-radius: 10px;
-}
-#taskbar button.active {
-  background-color: alpha(@btw, 0.2);
-}
-
-#taskbar button:hover {
-}
-
-#cpu {
-  font-size: 14px;
 }
 
 #custom-update {
   padding: 0 13px;
 }
 
-#custom-power {
-  border-radius: 14px;
-  padding: 0 13px;
-  margin: 0px 0px 0px 2px;
-  font-size: 13px;
-}
-
 #right1 {
-  border-radius: 14px;
+  border-radius: 12px;
   background: @bg;
   margin: 0px 6px 0px 6px;
   border: 1px solid alpha(@fg, 0.3);
 }
 
 #right2 {
-  border-radius: 14px;
+  border-radius: 12px;
   background: @bg;
   margin: 0px 6px 0px 6px;
   border: 1px solid alpha(@fg, 0.3);
@@ -243,9 +217,8 @@ window#waybar.empty #window {
 
 #battery {
   padding: 0 11px;
-  border-radius: 14px;
+  border-radius: 12px;
   font-size: 13px;
-  margin: 0px 0px 0px 0px;
 }
 
 #custom-icon {
@@ -303,7 +276,7 @@ window#waybar.empty #window {
   border-top-right-radius: 12px;
   border: 1px solid alpha(@fg, 0.3);
   border-width: 1px 1px 1px 0px;*/
-  border-radius: 14px;
+  border-radius: 12px;
   font-size:  14px;
 }
 
@@ -313,7 +286,7 @@ window#waybar.empty #window {
   /*background-color: @bg;
   border: 1px solid alpha(@fg, 0.3);
   border-width: 1px 0px 1px 0px;*/
-  border-radius: 14px;
+  border-radius: 12px;
   font-size: 13px;
 }
 
@@ -328,19 +301,17 @@ window#waybar.empty #window {
 #bluetooth:hover,
 #network:hover,
 #battery:hover,
-#pulseaudio:hover, 
-#custom-power:hover {
-
+#pulseaudio:hover {
   color: @background;
   background-color: @fg;
 }
 
 #cava {
-  padding: 0 10px;
+  padding: 0 7px;
   background-color: @background;
   /*box-shadow: 1px 1px 3px 1px @ia1;*/
   margin: 2px 4px 0px 4px;
-  border-radius: 14px;
+  border-radius: 12px;
   font-size: 11px;
   color: alpha(@btw, 1);
   border: 1px solid alpha(@fg, 0.4);
@@ -350,7 +321,7 @@ window#waybar.empty #window {
 #mpris {
   padding: 0 8px;
   background-color: @bg;
-  border-radius: 14px;
+  border-radius: 12px;
   /*box-shadow: 1px 1px 3px 1px @ia1;*/
   margin: 2px 4px 0px 4px;
   color: @fg;
