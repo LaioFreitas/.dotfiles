@@ -2,7 +2,7 @@ force_keyboard_focus = true                                                 # fo
 selection_wrap = true                                                       # wrap list if at bottom or top
 theme = "meu-tema"                                                   # theme to use
 additional_theme_location = "~/.local/share/omarchy/default/walker/themes/"
-#dadditional_theme_location = "~/.config/walker"
+additional_thema_location = "~/.config/walker/"
 hide_action_hints = true                                                    # globally hide the action hints
 
 [placeholders]
