@@ -1,5 +1,5 @@
 @import "../omarchy/current/theme/waybar.css";
-@import "../omarchy/current/theme/colorTheme";
+@import "../omarchy/current/theme/colorTheme.css";
 
 @define-color bg @background;
 @define-color fg @foreground;
@@ -121,7 +121,7 @@ window#waybar.empty #window {
 }*/
 
 #workspaces button.active {
-  color: @fg;
+  color: @bg;
   padding: 0 23px;
   background-color: alpha(@btw, 0.9);
   border-radius: 14px;
