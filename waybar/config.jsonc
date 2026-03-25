@@ -317,21 +317,58 @@
     "return-type": "json"
   },
 
-"cava": {
-    "framerate": 40,
-    "autosens": 1,
+/*"cava": {
+    "framerate": 60,
+    "data_format": "ascii",
+    "ascii_max_range": 2,
     "bar_delimiter": 1,
     "bars": 30,
+    "bar_height": 1,
+    "sensitivity": 1,
     "method": "pipewire",
     "source": "auto",
     "bar_delimiter": 0,
+    "noise_reduction": 0.6,
     "input_delay": 2,
     "sleep_timer": 2,
     "hide_on_silence": true,
     "font-size": 11,
     "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ]
-  },
-
+},*/
+/*"cava": {
+        // "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+        "framerate": 30,
+        "autosens": 1,
+        "sensitivity": 1,
+        "bars": 30,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 2000,
+        "hide_on_silence": true,
+        // "format_silent": "quiet",
+        "method": "pipewire",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": false,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
+*/
+"cava": {
+  "cava_config": "$XDG_CONFIG_HOME/cava/waybar_raw.conf",
+  "hide_on_silence": true,
+   "input_delay": 2,
+   "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+   "actions": {
+        "on-click-right": "mode"
+          }
+    },
 "temperature": {
   "thermal-zone": 2,
   "hwmon-path": "/sys/class/hwmon/hwmon3/temp2_input",

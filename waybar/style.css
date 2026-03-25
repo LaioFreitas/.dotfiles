@@ -121,7 +121,7 @@ window#waybar.empty #window {
 }*/
 
 #workspaces button.active {
-  color: @bg;
+  color: @fg;
   padding: 0 23px;
   background-color: alpha(@btw, 0.9);
   border-radius: 14px;
