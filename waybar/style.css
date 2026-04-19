@@ -132,12 +132,13 @@ window#waybar.empty #window {
 /*#workspaces button.empty {
   color: #404040;
 }*/
+
 #workspaces button.empty {
   background-color: alpha(@fg, 0.4);/*@background;*/
   color: @fg;
   opacity: 0.45;
   border-radius: 14px;
-  transition: all 0.15s ease-in-out;
+  transition: all 0.17s ease-in-out;
 }
 
 #workspaces button.empty.active {
@@ -203,6 +204,7 @@ window#waybar.empty #window {
 
 #taskbar button {
   border-radius: 10px;
+  padding: 1px;
 }
 
 #taskbar button.active {

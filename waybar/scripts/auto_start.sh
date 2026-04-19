@@ -19,4 +19,7 @@ ln -s ~/.config/waybar/color_themes/color_theme_rosePine.css rose-pine/colorThem
 ln -s ~/.config/waybar/color_themes/color_theme_tokyoNight.css tokyo-night/colorTheme.css
 ln -s ~/.config/waybar/color_themes/color_theme_vantaBlack.css vantablack/colorTheme.css
 ln -s ~/.config/waybar/color_themes/color_theme_white.css white/colorTheme.css
+ln -s ~/.config/waybar/color_themes/color_theme_lumon.css lumon/colorTheme.css
+
+#temas externos
 ln -s ~/.config/waybar/color_themes/color_theme_aetheria.css ~/.config/omarchy/themes/aetheria/colorTheme.css
