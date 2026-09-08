@@ -33,6 +33,7 @@ return {
     -- Adaptadores
     -- require("adapters.local-lua-config").setup(dap)
   end,
+
   keys = {
     {
       "<F5>",
