@@ -4,3 +4,4 @@ require("config.remote_clipboard").setup()
 -- Add any additional options here
 vim.opt.relativenumber = true
 vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
+vim.g.colorscheme = "gruvbox"

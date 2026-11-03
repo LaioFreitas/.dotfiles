@@ -77,8 +77,8 @@
 -- p
 -- ~/.config/nvim/lua/config/options.lua
 
-vim.opt.winblend = 0
-vim.opt.pumblend = 0
+-- vim.opt.winblend = 0
+-- vim.opt.pumblend = 0
 
 -- 1. Função para remover o fundo mantendo os outros atributos
 -- local function make_transparent(name)

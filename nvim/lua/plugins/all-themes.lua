@@ -2,88 +2,117 @@ return {
   -- Load all theme plugins but don't apply them
   -- This ensures all colorschemes are available for hot-reloading
   {
+    "Mofiqul/dracula.nvim",
+    lazy = false, -- Carrega ao iniciar o Neovim
+    priority = 1000, -- Garante que seja carregado antes dos outros plugins
+    opts = {
+      transparent_bg = true, -- Altere para true se quiser o fundo transparente
+    },
+  },
+  {
     "ribru17/bamboo.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "bjarneo/aether.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "bjarneo/ethereal.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "bjarneo/hackerman.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "bjarneo/vantablack.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "bjarneo/white.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "catppuccin/nvim",
     name = "catppuccin",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "sainnhe/everforest",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "kepano/flexoki-neovim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "ellisonleao/gruvbox.nvim",
     lazy = true,
     priority = 1000,
+    opts = {
+      transparent_mode = true,
+      transparent_background = true, -- Ativa a transparência
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
+      integrations = {
+        neotree = true,
+        cmp = true,
+        gitsigns = true,
+        telescope = true,
+      },
+    },
   },
   {
     "rebelot/kanagawa.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "tahayvr/matteblack.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "loctvl842/monokai-pro.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "shaunsingh/nord.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "rose-pine/neovim",
     name = "rose-pine",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "folke/tokyonight.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 10,
     opts = {
+      transparent_mode = true,
       transparent_background = true, -- Ativa a transparência
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
       integrations = {
         neotree = true,
         cmp = true,
@@ -96,26 +125,26 @@ return {
   {
     "xero/miasma.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
 
   -- 1. Aqui estão todos os seus temas que você já tinha colocado...
   {
     "ribru17/bamboo.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   {
     "catppuccin/nvim",
     name = "catppuccin",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
   -- [... todos os outros temas do meio ficam aqui ...]
   {
     "xero/miasma.nvim",
     lazy = true,
-    priority = 1000,
+    priority = 1,
   },
 
   -- 2. ⬇️ APAGUE O BOLO VELHO QUE ESTAVA AQUI NO FIM E COLE ESSE NOVO BLOCO INTEIRO ⬇️
